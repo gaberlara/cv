@@ -1,0 +1,211 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+% Version 1.2 (3/28/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute 
+% (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Modified by:
+% Gabe Lara <grl5035@psu.edu> 05-06-2024
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% You can have multiple style options the legal options ones are:
+%
+%   centered:	the name and address are centered at the top of the page 
+%				(default)
+%
+%   line:		the name is the left with a horizontal line then the address to
+%				the right
+%
+%   overlapped:	the section titles overlap the body text (default)
+%
+%   margin:		the section titles are to the left of the body text
+%		
+%   11pt:		use 11 point fonts instead of 10 point fonts
+%
+%   12pt:		use 12 point fonts instead of 10 point fonts
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[9pt,margin]{res}  
+\topmargin=-0.75in
+\leftmargin=-1.25in
+\rightmargin=-1.25in
+
+% Default font is the helvetica postscript font
+\usepackage{helvet}
+
+\usepackage{enumitem} % This package allows customization of lists
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\usepackage{array}
+
+% Increase text height
+\textheight=800pt
+
+\begin{document}
+
+%-------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%-------------------------------------------------------------------------------
+\name{John Smith\\[12pt]Updated: 4/2024} % Adds the updated date below the name
+
+% Note that addresses can be used for other contact information:
+% -phone numbers
+% -email addresses
+% -linked-in profile
+
+%-------------------------------------------------------------------------------
+%	ACADEMIC NAME AND ADDRESS SECTION
+%-------------------------------------------------------------------------------
+\address{\\ School of Environmental Science and Economics \\ 
+Department of Environmental Economics, \\ 
+Example University \\
+University Town, State 12345}
+\address{
+\text{Citizenship: Generic Country} \\ 
+\faPhone{ }\text{+1 800-123-4567} \\ 
+\faEnvelope{ }\href{mailto:jsmith@example.edu}{jsmith@example.edu} \\
+\faGlobe{ }\href{https://johnsmith.com/}{johnsmith.com} \\ 
+\faLinkedin{ }\href{https://www.linkedin.com/in/johnsmith/}{linkedin.com/in/johnsmith} \\
+\faGithub{ }\href{https://github.com/johnsmith}{github.com/johnsmith} 
+}
+
+%-------------------------------------------------------------------------------
+\begin{resume}
+%-------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%-------------------------------------------------------------------------------
+\section{EDUCATION}
+\vspace{1em}
+    Ph.D. in Environmental Economics, Example University\hfill Expected 2024\\
+    M.S. in Sustainability, Green Tech University\hfill 2020\\
+    B.S. in Environmental Science, Earth College\hfill 2016
+
+    \noindent\hrulefill % This line creates a horizontal line across the page
+
+%-------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE SECTION
+%-------------------------------------------------------------------------------
+\section{PROFESSIONAL\\EXPERIENCE}
+    \vspace{1em}
+    \setlength{\tabcolsep}{0pt} % Remove space from left and right of table columns
+    \noindent
+    \begin{tabularx}{\textwidth}{@{}X r@{}}
+        \textbf{Research Assistant} & \text{2018 - Present} \\
+        Supervisor: Jane Doe, Example University (EEFE) & \\
+        University Town, State & \\
+    \end{tabularx}
+    \vspace{1em}
+    \begin{itemize}[leftmargin=*, label={--}]
+        \item Employ quantitative and qualitative research methods to study the impact of economic policies on environmental outcomes.
+        \item Present ongoing research at national and international conferences.
+        \item Work collaboratively with a team to publish findings in top-tier academic journals.
+    \end{itemize}
+
+%-------------------------------------------------------------------------------
+%	WORKING PAPERS
+%-------------------------------------------------------------------------------
+\section{WORKING PAPERS}
+    \vspace{1em}
+    \begin{itemize}[label={--}]
+        \item "The Impact of Climate Change on Agricultural Productivity" - Under review
+        \item "Economic Valuation of Biodiversity" - In preparation
+    \end{itemize}
+
+    \noindent\hrulefill % This line creates a horizontal line across the page
+
+%-------------------------------------------------------------------------------
+%	REPORTS & OTHER PUBLICATIONS
+%-------------------------------------------------------------------------------
+\section{REPORTS AND PUBLICATIONS}
+    \vspace{1em}
+    \begin{itemize}[label={--}]
+        \item "Annual Environmental Economics Report" - Published by Example University, 2023
+    \end{itemize}
+
+    \noindent\hrulefill % This line creates a horizontal line across the page
+
+%-------------------------------------------------------------------------------
+%	PRESENTATIONS & WORKSHOPS
+%-------------------------------------------------------------------------------
+\section{PRESENTATIONS AND WORKSHOPS}
+    \vspace{1em}
+    \begin{itemize}[label={--}]
+        \item Presented at the International Conference on Environmental Economics, 2023
+        \item Conducted a workshop on Economic Modeling of Environmental Policies, Example University, 2022
+    \end{itemize}
+
+    \noindent\hrulefill % This line creates a horizontal line across the page
+%-------------------------------------------------------------------------------
+%	RESEARCH INTERESTS
+%-------------------------------------------------------------------------------
+\section{RESEARCH INTERESTS}
+    \vspace{1em}
+    \begin{itemize}[label={--}]
+        \item Environmental Policy
+        \item Econometric Modeling
+        \item Sustainable Development
+    \end{itemize}
+
+    \noindent\hrulefill % This line creates a horizontal line across the page
+%-------------------------------------------------------------------------------
+%	PROFESSIONAL ASSOCIATIONS
+%-------------------------------------------------------------------------------
+\section{PROFESSIONAL ASSOCIATIONS}
+    \vspace{1em}
+    \begin{itemize}[label={--}]
+        \item Member, American Association of Environmental Economists
+        \item Member, International Society for Ecological Economics
+    \end{itemize}
+    
+%-------------------------------------------------------------------------------
+%	TECHNICAL PROFICIENCIES
+%-------------------------------------------------------------------------------
+\newpage
+\section{TECHNICAL PROFICIENCIES}
+    \vspace{1em}
+    \begin{itemize}[label={--}]
+        \item Statistical Software: R, STATA, Python
+        \item GIS Software: ArcGIS
+        \item Database Management: SQL
+    \end{itemize}
+    
+    \noindent\hrulefill % This line creates a horizontal line across the page
+%-------------------------------------------------------------------------------
+%	PROFESSIONAL REFERENCES
+%-------------------------------------------------------------------------------
+\section{REFERENCES}
+    \vspace{1em}
+    \begin{itemize}[label={--}]
+        \item Dr. Alice Green, Professor, Example University, Contact: alice.green@example.edu
+        \item Mr. Bob Blue, Senior Scientist, Green Research Lab, Contact: bob.blue@researchlab.com
+    \end{itemize}
+\end{resume}
+
+\end{document}
